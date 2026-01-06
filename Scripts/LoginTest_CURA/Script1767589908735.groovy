@@ -41,6 +41,9 @@ WebUI.click(findTestObject('Page_Login/btn_Login'))
 // Step 10: Comment log about expected result
 WebUI.comment('Then he should be able to login successfully')
 
+// Step 7: Capture element screenshot as checkpoint (Login Dialog With Data)
+WebUI.takeElementScreenshotAsCheckpoint('appointment page', findTestObject('Object Repository/Page_CURA Healthcare Service/section_appointment'))
+
 // Step 11: Verify element present on landing page (appointment div)
 boolean landingPage = WebUI.verifyElementPresent(landingPageObject, G_Timeout)
 
